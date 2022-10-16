@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+
+}
+
+/* div wrapper para falcilitar o design responsivo*/
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 25% auto;
+    margin: auto;
+    background: #2B3840;
+}
+
+/*  Estilização do Header*/
+
+header {
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 5rem;
+    background: #FAF9F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilização da Side Bar */
+
+#side-bar {
+    display: flex;
+    flex-direction: column;
+    background-color: #2B3840;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+#navNome {
+    padding: 10% 0 5% 5%;
+    font-size: 2.7vw;
+    color: #e5e2e2;
+
+}
+
+#navTel {
+    padding: 5% 0 0 5%;
+    font-size: 1.5vw;
+    color: #d0caca;
+}
+
+#navEmail {
+    padding: 10% 0 0 5%;
+    font-size: 1.5vw;
+    color: #d0caca;
+}
+
+/* Estilização do Conteúdo */
+
+#content {
+
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#content>article {
+    background: #FAF9F6;
+    border-radius: 8px;
+    padding: 3rem;
+    width: 80%;
+}
+
+.divContent {
+    margin: 0 2rem;
+    padding: 1rem 0;
+}
+
+.divContent>h1 {
+    padding: 2rem 0;
+}
+
+.projetos {
+    padding: 1rem;
+    border: 2px #ccc solid;
+    border-radius: 8px;
+    margin: 3rem auto;
+}
+
+.projetos:hover {
+    transform: translateY(-1rem);
+    transition: transform .3s;
+}
+
+.projetos>img {
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#divContato {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+    justify-content: space-around;
+}
+
+#divContato>div {
+    margin: 30% 10%;
+    padding: 10%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ccc;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.caixaContato:hover {
+    transform: translateY(-1rem);
+    transition: transform .3s;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+#imgPerfil {
+    border-radius: 100%;
+    width: 60%;
+    height: auto;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: #143233 3px solid;
+    outline: #d0caca 3px solid;
+}
+
+.imgLogo {
+    width: 50%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 87.5%;
+    }
+
+    #wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    #profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #profile>h2,
+    #profile>p {
+        font-size: 200%;
+    }
+
+    #content>article {
+        padding: 0.5rem;
+    }
+
+    #divContato {
+        grid-column-gap: .25rem;
+    }
+}

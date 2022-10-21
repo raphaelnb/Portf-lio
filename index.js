@@ -13,3 +13,7 @@ document.getElementById("orc").onclick = function () {
 document.getElementById("google").onclick = function () {
     window.open("https://raphaelnb.github.io/google/");
 }
+
+document.getElementById("rocketpay").onclick = function () {
+    window.open("https://rocketpay-ignitelab.vercel.app");
+}
